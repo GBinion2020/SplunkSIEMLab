@@ -39,8 +39,8 @@ To see more closely whats going on, we can add "| table timestamp,form_data" to 
 <img src="https://i.imgur.com/4Nk4RkN.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <h2>Summary </h2>
-From looking at the events
-</p>
+By looking at the data found in the last pciture, we can see the brute force attack was not succesful as the last attemtps made were not the correct login information.
+
 
 <!--
  ```diff
