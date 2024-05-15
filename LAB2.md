@@ -43,7 +43,6 @@ From our search we have a lot of valuable information such as the sourceIP condu
 <br />
 
 <h1>Summary</h1>
-<br />
 From the information gathered, we can see that a malicious actor located in the United States with an IP address of 40.80.148.42 used an Acunetix web vulnerability scanner on the companies webserver.
 
 <!--
