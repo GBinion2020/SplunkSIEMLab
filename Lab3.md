@@ -21,7 +21,7 @@ First I did a simple google search of the unexpected file, the following results
 <br />
 <br />
 To further our investigation, we will enter our source type and string to narrow the events that include the file needed.
-  In this case the xmlwineventlog sourcelog and "osk.exe":  <br/>
+In this case the xmlwineventlog sourcelog and "osk.exe".  <br/>
 <img src="https://i.imgur.com/RYXOzr5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
@@ -31,12 +31,13 @@ From the results we can see that the file is indeed NOT stored in the C:\Windows
 <br />
 <br />
 Next we're going to find any network connections assosicated with the malicious file. First scroll down to the 'image' section and click on
-  the file path for osk.exe:  <br/>
+  the file path for osk.exe, Then click on the DistinationPort section and select the value with the most traffic "6892" Selecting both items will add them to our search:  <br/>
 <img src="https://i.imgur.com/we0Dkr5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/qXr8ecT.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Up untill now our search should look like this: index="botsv1" sourcetype=xmlwineventlog osk.exe Image="C:\\Users\\bob.smith.WAYNECORPINC\\AppData\\Roaming\\{35ACA89F-933F-6A5D-2776-A3589FB99832}\\osk.exe" DestinationPort=6892, Next we're going to see how many IP addresses the file has connected to. To do so lets add " | stats count by destinationIp":  <br/>
+<img src="https://i.imgur.com/C1RIFvF.png" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 Sanitization complete:  <br/>
