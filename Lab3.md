@@ -67,7 +67,16 @@ Lastly, we're going to see if Suricata (the IDS) has this activity alerted alrea
 <img src="https://i.imgur.com/Op6bVnu.png" width="80%" alt="Disk Sanitization Steps"/>
 <br/>
 <br/>
-Looking at the single event we see the destinationIP 54.148.194.58 and sourceIP 192.168.250.100. Using the formatting already known we can create the search query to identify the suspicious port 80 HTTP traffic
+Looking at the single event we see the destinationIP 54.148.194.58 and sourceIP 192.168.250.100. Using the formatting already known we can create the search query to identify the suspicious port 80 HTTP traffic. index="botsv1" sourcetype=suricata src_ip=192.168.250.100 dest_ip=54.148.194.58 dest_port=80 event_type=alert. After finding the right event we can click on the ">" arrow in the top-left of the row to see all fields and values (this is to show the raw data which shows more information):
+<img src="https://i.imgur.com/qKnW8wE.png" width="80%" alt="Disk Sanitization Steps"/>
+<br/>
+<br/>
+Finally, we see a field not configured to show on the Event Details panel, we can see the alert.signature value for this log is related to an external IP lookup, an action that is conducted by attackers or malware to identify the public IP of the machine or network, helping them to understand what company they have compromised (based on indicators such as the IP range owner, ASN owner, WHOis contact details, and more).
+<img src="https://i.imgur.com/w5YvtQI.png" width="80%" alt="Disk Sanitization Steps"/>
+<h2>Summary</h2>
+  In conclusion, the osk.exe file is a malicious trojan horse ransomware virus disguised as a legitimate file. 
+<br/>
+
 </p>
 
 <!--
