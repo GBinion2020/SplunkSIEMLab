@@ -71,7 +71,7 @@ Looking at the single event we see the destinationIP 54.148.194.58 and sourceIP 
 <img src="https://i.imgur.com/qKnW8wE.png" width="80%" alt="Disk Sanitization Steps"/>
 <br/>
 <br/>
-Finally, we see a field not configured to show on the Event Details panel, we can see the alert.signature value for this log is related to an external IP lookup, an action that is conducted by attackers or malware to identify the public IP of the machine or network, helping them to understand what company they have compromised (based on indicators such as the IP range owner, ASN owner, WHOis contact details, and more).
+Finally, we see a field not configured to show on the Event Details panel, we can see the alert.signature value for this log is related to an external IP lookup, an action that is conducted by attackers or malware to identify the public IP of the machine or network, helping them to understand what company they have compromised (based on indicators such as the IP range owner, ASN owner, WHOis contact details, and more).<br/>
 <img src="https://i.imgur.com/w5YvtQI.png" width="80%" alt="Disk Sanitization Steps"/>
 <h2>Summary</h2>
   In conclusion, the osk.exe file is a malicious trojan horse ransomware virus disguised as a legitimate file. 
